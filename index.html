@@ -3,9 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <title>Descargar APK</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fuente de Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Iconos de Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Estilos generales */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+            max-width: 600px;
+        }
+
+        .download-button {
+            background-color: #fff;
+            color: #764ba2;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .download-button i {
+            margin-right: 10px;
+        }
+
+        .download-button:hover {
+            background-color: #764ba2;
+            color: #fff;
+        }
+
+        /* Responsividad */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            p {
+                font-size: 1em;
+                padding: 0 20px;
+            }
+
+            .download-button {
+                padding: 12px 25px;
+                font-size: 1em;
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>Descarga nuestra aplicación</h1>
-    <a href="Detector_Android_iOS.apk" download>Haz clic aquí para descargar el APK</a>
+    <h1>Descarga Nuestra Aplicación</h1>
+    <p>Haz clic en el botón de abajo para descargar la última versión de nuestra aplicación para Android.</p>
+    <a href="Detector_Android_iOS.apk" class="download-button" download>
+        <i class="fas fa-download"></i> Descargar APK
+    </a>
 </body>
 </html>
